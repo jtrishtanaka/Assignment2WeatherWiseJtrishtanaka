@@ -1,5 +1,5 @@
 Tool :Chatgpt
-Date : 05/15/2025
+Date : 05/17/2025
 
 Me: What kind of visualizations does the weather app generate?  
 AI: Two types — a line chart for temperature trends and a bar chart for humidity forecasts.
