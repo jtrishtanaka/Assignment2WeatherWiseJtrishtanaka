@@ -35,34 +35,53 @@ You'll be greeted by an interactive command-line menu.
 
 Here’s what this app can do:
 
-- Check today’s weather for any city worldwide
-- Visualise the 3-day forecast (temperature & rainfall graphs)
-- Ask natural questions, like:
-  - "What's the weather in Port Louis tomorrow?"
-  - "Is it going to rain in Curepipe the day after tomorrow?"
-- Motivational quotes to brighten your day, no matter the weather
+* Check today’s weather for any city worldwide
+* Visualise the 3-day forecast (temperature & rainfall graphs)
+* Ask natural questions, like:
+
+  * "What's the weather in Port Louis tomorrow?"
+  * "Is it going to rain in Curepipe the day after tomorrow?"
+* Motivational quotes to brighten your day, no matter the weather
 
 ---
 
 ## How It Works
 
 ### 1. Weather API Integration
+
 The app fetches real-time and 3-day forecast weather data using the **wttr.in** API.
 
 ### 2. Data Visualisation
+
 With **Matplotlib**, the app graphs:
-- Daily high and low temperatures
-- Midday rainfall predictions
+
+* Daily high and low temperatures
+* Midday rainfall predictions
+
+When you press **option 2** from the main menu ("Visualise 3-day forecast"), the app will:
+
+1. Prompt you to enter the city.
+2. Fetch weather data for the next 3 days.
+3. Ask if you want to visualise temperature only, rainfall only, or both.
+4. Display clear, styled graphs using matplotlib, including:
+
+   * A line graph showing high and low temperatures per day.
+   * A bar chart showing rainfall estimates for each day at midday.
+
+This feature gives you a quick, intuitive understanding of upcoming weather conditions.
 
 ### 3. Natural Language Parsing
-The app uses simple regex to understand questions like:
+
+The app uses regular expressions to understand questions like:
+
 > “What’s the weather in Paris tomorrow?”
 
-It figures out:
-- The city
-- The day (today, tomorrow, day after)
+It extracts:
 
-And gives you a clear forecast.
+* The location (e.g., "Paris")
+* The time frame (today, tomorrow, day after)
+
+Based on that, it fetches and displays the appropriate forecast.
 
 ---
 
@@ -83,9 +102,9 @@ Welcome to Trisha’s Weather Advisor
 
 ## Example Questions You Can Ask
 
-- "What's the weather in Curepipe?"
-- "Will it rain in Flic-en-Flac tomorrow?"
-- "Is it hot in Port Louis the day after tomorrow?"
+* "What's the weather in Curepipe?"
+* "Will it rain in Flic-en-Flac tomorrow?"
+* "Is it hot in Port Louis the day after tomorrow?"
 
 ---
 
@@ -97,9 +116,9 @@ Every time you check the weather or view a forecast, you’ll receive a random, 
 
 ## Troubleshooting
 
-- **API Timeout/Error**  
-  Check your internet connection or try again later.  
-- **Missing Data**  
+* **API Timeout/Error**
+  Check your internet connection or try again later.
+* **Missing Data**
   wttr.in might not return forecast data for small towns. Try a nearby city.
 
 ---
@@ -107,14 +126,15 @@ Every time you check the weather or view a forecast, you’ll receive a random, 
 ## Behind the Scenes
 
 Key Python Libraries Used:
-- `requests` – To fetch weather data
-- `matplotlib.pyplot` – To create visual graphs
-- `pyinputplus` – To build clean, interactive CLI menus
-- `re` – For parsing natural language queries
+
+* `requests` – To fetch weather data
+* `matplotlib.pyplot` – To create visual graphs
+* `pyinputplus` – To build clean, interactive CLI menus
+* `re` – For parsing natural language queries
 
 ---
 
 ## Created by
 
-**Tanaka “Trish” Jera**  
+**Tanaka “Trish” Jera**
 Curtin University, Mauritius
