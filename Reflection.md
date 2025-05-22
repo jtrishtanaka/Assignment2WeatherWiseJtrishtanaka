@@ -15,7 +15,7 @@ On the whole, this project has been a fantastic learning experience. It has help
 
 ## AI Tools Used
 What tools did you use (e.g., ChatGPT, Copilot)? How did they help?
-•	ChatGPT was continuously used throughout the development process. It felt like a creative and technical co-pilot — explaining to me everything about how to modularise the code and implement various features.
+•	ChatGPT was continuously used throughout the development process. It felt like a creative and technical co-pilot explaining to me everything about how to modularise the code and implement various features.
 •	ChatGPT helped considerably with fetching weather data through APIs, visualising it using `matplotlib`, and exception handling to ensure the app did not crash during unexpected inputs.
 •	Using motivational quotes tailored to the user’s name was also an idea that began to form while experimenting with creative prompts on ChatGPT, engaging the app further.
 •	I also occasionally used Google in some places to clarify concepts about certain Python libraries. I frequently referred to `matplotlib` styling and layout adjustments.
@@ -27,16 +27,16 @@ Which intentional prompting strategies did you apply?
 •	I positioned prompting with a conversation and iterative mindset. Each prompt was almost a question posed to a teammate, as opposed to just using ChatGPT as a search engine.
 •	I dissected the development problem into focused queries such as, “How do I fetch weather data from wttr.in?”, or “Can you help me parse a natural question for weather data?”
 •	Whenever a bug happened, I would paste the snippet in ChatGPT and have back-and-forth conversations on diagnosing and fixing the problem.
-•	This style of prompting would resemble agile development — fast, responsive, and ever-improving.
+•	This style of prompting would resemble agile development  fast, responsive, and ever-improving.
 
 
 ## What Worked Well?
 Describe one thing you’re proud of.
 
 •	One of the successes of the project was a friendly and coherent user experience. The command-line menu is clear and the flow of information is intuitive.
-•	Data visualisation via `matplotlib` made the forecast feel informative yet simple to grasp — particularly with the `ggplot` theme bringing aesthetics to bear.
+•	Data visualisation via `matplotlib` made the forecast feel informative yet simple to grasp  particularly with the `ggplot` theme bringing aesthetics to bear.
 •	Another highlight lay in the personalised motivational quotes. This simple feature managed to humanise the tool, turning it from a dry utility into something more emotionally aware.
-•	The app's capacity to decipher queries articulated in natural language — like "What's the weather in Curepipe tomorrow?" — provided an intelligent charm to the otherwise smooth and informal interactions.
+•	The app's capacity to decipher queries articulated in natural language  like "What's the weather in Curepipe tomorrow?" provided an intelligent charm to the otherwise smooth and informal interactions.
 
 
 ## What Would You Do Differently?
